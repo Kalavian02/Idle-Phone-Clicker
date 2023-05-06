@@ -333,7 +333,9 @@ function savegame(){
 	
 	savestring+=finalcost+",";
 	savestring+=finalcount+",";
-	savestring+=finalsec;
+	savestring+=finalsec+",";
+	
+	savestring+=Date.now();
 	let encodedSave = btoa(btoa(savestring));
 	alert("Press OK and then copy and paste the encoded string somewhere safe.");
 	
@@ -373,5 +375,11 @@ function loadsave(){
 	finalcost=loadArray[26];
 	finalcount=loadArray[27];
 	finalsec=loadArray[28];
+	let lastSaveTime=loadArray[29];
+	let secondsSinceSave=(Date.now()-lastSaveTime)/1000;
+	let cashSinceSave=(rotarysec+pushbtnsec+oldcellsec+oldsmartsec+modernsec+futuresec+holosec+finalsec)*secondsSinceSave;
+	currentcash+=cashSinceSave;
+	tpcash+=cashSinceSave;
+	alert("You have made $"+convMoney(cashSinceSave)+" since this save was created.");
 	updateGame();
 }
