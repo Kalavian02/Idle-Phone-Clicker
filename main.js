@@ -343,6 +343,10 @@ function savegame(){
 }
 function loadsave(){
 	let encodedSaveData=prompt("Import Save Data");
+	if(encodedSaveData=""){
+		alert("Paste encoded save data");
+	}
+	else{
 	let loadData = atob(atob(encodedSaveData));
 	let loadArray = loadData.split(',');
 	loadArray = loadArray.map(Number);
@@ -382,4 +386,5 @@ function loadsave(){
 	tpcash+=cashSinceSave;
 	alert("You have made $"+convMoney(cashSinceSave)+" since this save was created.");
 	updateGame();
+	}
 }
