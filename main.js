@@ -343,7 +343,7 @@ function savegame(){
 }
 function loadsave(){
 	let encodedSaveData=prompt("Import Save Data");
-	if(encodedSaveData=""){
+	if(encodedSaveData==""){
 		alert("Paste encoded save data");
 	}
 	else{
