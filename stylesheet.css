@@ -1,0 +1,79 @@
+		body {
+		font-family: sans-serif;
+		text-align: center;
+		background-color: #FFFFFF;
+		color: #F0F0F0;
+		}
+		#clickergame {
+			background-color: #101010;
+			width: 1200px;
+			margin: auto;
+			padding: 10px;
+		}
+		#clickbtn {
+			background-color: #F0F0F0;
+			width: 200px;
+			height: 60px;
+			margin-bottom: 20px;
+			font-size: 30px;
+		}
+		#prestigestatus {
+			display: inline-block;
+			padding-right: 10px;
+			margin-top: 20px;
+		}
+		#prestigebtn {
+			background-color: #F0F0F0;
+			width: 200px;
+			height: 60px;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			font-size: 30px;
+			display: inline-block;
+			padding-left: 10px;
+		}
+		#savebox {
+			background-color: #303030;
+			position: absolute;
+			top: 40px;
+			margin-left: 20px;
+			width: 200px;
+			height: 200px;
+		}
+		.saveopt {
+			background-color: #F0F0F0;
+			width: 80px;
+			height: 50px;
+			font-size: 20px;
+		}
+		.smallfonttable {
+			font-size: 16px;
+		}
+		button {
+			font-size: 15px;
+			background-color: #F0F0F0;
+			width: 90%;
+			height: 80%;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		table {
+			font-size: 20px;
+			margin: auto;
+			border-spacing: 0px;
+			display: inline-block;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		td {
+			border: 3px solid white;
+			width: 120px;
+			height: 60px;
+		}

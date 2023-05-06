@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Idle Phone Clicker</title>
+		<link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+<div id="clickergame">
+	<h1>Idle Phone Clicker</h1>
+	<h2 id="cashcount">Loading</h2>
+	<button id="clickbtn" onclick="clickBtn()">Click</button>
+	<h2 id="cashperclick">?</h3>
+	<table>
+		<tr id="rotaryrow">
+			<td>
+			Rotary Phone
+			</td>
+			<td id="rotarycount">
+			?
+			</td>
+			<td id="rotarycash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="rotarycost" onclick="buyRotary()">?</button>
+			</td>
+		</tr>
+		<tr id="pushbtnrow">
+			<td>
+			PushButton Phone
+			</td>
+			<td id="pushbtncount">
+			?
+			</td>
+			<td id="pushbtncash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="pushbtncost" onclick="buyPushBtn()">?</button>
+			</td>
+		</tr>
+		<tr id="oldcellrow">
+			<td>
+			Old Cellphone
+			</td>
+			<td id="oldcellcount">
+			?
+			</td>
+			<td id="oldcellcash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="oldcellcost" onclick="buyOldCell()">?</button>
+			</td>
+		</tr>
+		<tr id="oldsmartrow">
+			<td>
+			Smartphone
+			</td>
+			<td id="oldsmartcount">
+			?
+			</td>
+			<td id="oldsmartcash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="oldsmartcost" onclick="buyOldSmart()">?</button>
+			</td>
+		</tr>
+	</table><table>
+		<tr id="modernrow">
+			<td>
+			Modern Phone
+			</td>
+			<td id="moderncount">
+			?
+			</td>
+			<td id="moderncash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="moderncost" onclick="buyModern()">?</button>
+			</td>
+		</tr>
+		<tr id="futurerow">
+			<td>
+			Future Phone
+			</td>
+			<td id="futurecount">
+			?
+			</td>
+			<td id="futurecash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="futurecost" onclick="buyFuture()">?</button>
+			</td>
+		</tr>
+		<tr id="holorow">
+			<td>
+			Holograph Phone
+			</td>
+			<td id="holocount">
+			?
+			</td>
+			<td id="holocash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="holocost" onclick="buyHolo()">?</button>
+			</td>
+		</tr>
+		<tr id="finalrow">
+			<td class="smallfonttable">
+			The Phone to End All Phones
+			</td>
+			<td id="finalcount">
+			?
+			</td>
+			<td id="finalcash" class="smallfonttable">
+			?
+			</td>
+			<td>
+			<button id="finalcost" onclick="buyFinal()">?</button>
+			</td>
+		</tr>
+	</table>
+	<h3 id="prestigestatus" float>?</h3>
+	<button id="prestigebtn" onclick="prestige()">Prestige</button>
+	<div id="savebox">
+		<h2>Save Game</h2>
+		<button class="saveopt" id="savebtn" onclick="savegame()">Save</button>
+		<button class="saveopt" id="loadbtn" onclick="loadsave()">Load</button>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
