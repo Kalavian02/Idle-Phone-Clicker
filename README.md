@@ -1,2 +1,2 @@
-# Idle-Phone-Clicker
+# Idle Phone Clicker
 A random clicker game
