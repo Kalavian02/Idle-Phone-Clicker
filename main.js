@@ -337,9 +337,8 @@ function savegame(){
 	
 	savestring+=Date.now();
 	let encodedSave = btoa(btoa(savestring));
-	alert("Press OK and then copy and paste the encoded string somewhere safe.");
 	
-	alert(encodedSave);
+	prompt("Copy this save data somewhere safe",encodedSave);
 }
 function loadsave(){
 	let encodedSaveData=prompt("Import Save Data");
